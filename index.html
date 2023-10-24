@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja Coringão</title>
+    <link rel="stylesheet" href="style.css  ">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Coringão <span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="ToggleCarrinho()">
+                <div class="imagem">
+                    <img src="imagens/carrinho.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor total:R$0,00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/01.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Estojo </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('Estojo', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/02.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Cartas </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('Cartas', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/03.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Copo </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('Copo', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/04.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Boné </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('Boné', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/05.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Garrafa </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('Garrafa', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="imagens/06.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Toalha </h3>
+                            <p>R$ 50,00</p>
+                            <button onclick="addCarrinho('', 50.00)"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cont">
+            <p class="foo"  >(11)25528444</p>
+            <p  class="foo"  >loja@email.com</p>
+            <p class="foo" >Rua Japão, 2012</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
